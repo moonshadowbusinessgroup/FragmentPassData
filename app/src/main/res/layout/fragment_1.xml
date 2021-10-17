@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Fragment1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="30dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33.5dp"
+            android:src="@drawable/ic_baseline_notes_24" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="User Profile"
+            android:textColor="#474361"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nameE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="#495464" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emailE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="#495464" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/genderE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Gender"
+            android:inputType="text"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="#495464" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/statusE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg1"
+            android:hint="Status"
+            android:inputType="text"
+            android:paddingVertical="10dp"
+            android:paddingLeft="20dp"
+            android:textColor="#495464" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg2"
+        android:elevation="@dimen/cardview_compat_inset_shadow"
+        android:text=" Submit" />
+
+</LinearLayout>
